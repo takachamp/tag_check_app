@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+<h2 class="display-5">さっそくAIで検証してみよう</h2>
+<h3 class="display-6">画像をアップロードしてね!!!</h3>
+  <form method='POST' action="/predict" enctype="multipart/form-data">
+    <div>
+      <input type="file" name="file">
+      <input type="submit" value="予測する">
+    </div>
+  </form>
+{% endblock %}

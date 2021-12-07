@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+  <h1 class="display-4">AIで調べる？自分で調べる？それとも.......</h1>
+  <div class="main">
+    <div class="camera">
+      <p class="ai_choose">AI機能で調べる</p>
+      <button class="btn_custom1" onclick="location.href='/jp_check'"><img src="/static/camera.jpeg" height="150px" width="150px"></button>
+    </div>
+    <div class="list">
+      <p class="list_choose">一覧から選択する</p>
+      <button class="btn_custom2" onclick="location.href='/jp_list'"><img src="/static/list.png" height="150px" width="150px"></button>
+    </div>
+  </div>
+{% endblock %}
