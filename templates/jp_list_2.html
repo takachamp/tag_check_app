@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+<h1>洗濯表示選択</h1>
+<p>マークをタップしてね!!</p>
+
+<a href="#modal-21">
+  <img class="tag" src="/static/ensosanso-hyouhaku.gif">
+</a>
+<a href="#modal-22">
+  <img class="tag" src="/static/ensosanso-hyouhaku-ng.gif">
+</a>
+<a href="#modal-23">
+  <img class="tag" src="/static/fdry.gif">
+</a>
+<a href="#modal-24">
+  <img class="tag" src="/static/fdryw.gif">
+</a>
+<a href="#modal-25">
+  <img class="tag" src="/static/hand40c.gif">
+</a>
+<a href="#modal-26">
+  <img class="tag" src="/static/hiraboshi-hikage.gif">
+</a>
+<a href="#modal-27">
+  <img class="tag" src="/static/hiraboshi-hikagenure.gif">
+</a>
+<a href="#modal-28">
+  <img class="tag" src="/static/hiraboshi-nure.gif">
+</a>
+<a href="#modal-29">
+  <img class="tag" src="/static/hiraboshi.gif">
+</a>
+<a href="#modal-30">
+  <img class="tag" src="/static/ng.gif">
+</a>
+<a href="#modal-31">
+  <img class="tag" src="/static/pfdry.gif">
+</a>
+<a href="#modal-32">
+  <img class="tag" src="/static/pfdryw.gif">
+</a>
+<a href="#modal-33">
+  <img class="tag" src="/static/bleech_o.gif">
+</a>
+<a href="#modal-34">
+  <img class="tag" src="/static/tanb-ng.gif">
+</a>
+<a href="#modal-35">
+  <img class="tag" src="/static/tanb60c.gif">
+</a>
+<a href="#modal-36">
+  <img class="tag" src="/static/tanb80c.gif">
+</a>
+<a href="#modal-37">
+  <img class="tag" src="/static/turiboshi-hikage.gif">
+</a>
+<a href="#modal-38">
+  <img class="tag" src="/static/turiboshi-nure.gif">
+</a>
+<a href="#modal-39">
+  <img class="tag" src="/static/turiboshi-nurehikage.gif">
+</a>
+<a href="#modal-40">
+  <img class="tag" src="/static/turiboshi.gif">
+</a>
+<div>
+  <a class="btn btn--orange btn--radius" href="/jp_list">前に戻る</a>
+</div>
+
+<div class="modal-wrapper" id="modal-21">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/ensosanso-hyouhaku.gif" width="30%">
+      <p>塩素系・酸素系漂白剤で、漂白できます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-22">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/ensosanso-hyouhaku-ng.gif" width="30%">
+      <p>漂白できません。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-23">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/fdry.gif" width="30%">
+      <p>石油系溶剤による、ドライクリーニングができます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-24">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/fdryw.gif" width="30%">
+      <p>石油系溶剤による弱いドライクリーニングができます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-25">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/hand40c.gif" width="30%">
+      <p>液温は40℃を限度とし手洗いができます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+<div class="modal-wrapper" id="modal-26">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/hiraboshi-hikage.gif" width="30%">
+      <p>日陰の平干しが良いでしょう。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-27">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/hiraboshi-hikagenure.gif" width="30%">
+      <p>日陰で、脱水せずぬれたまま平干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-28">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/hiraboshi-nure.gif" width="30%">
+      <p>脱水せずぬれたまま、平干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-29">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/hiraboshi.gif" width="30%">
+      <p>平干しが良いでしょう。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-30">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/ng.gif" width="30%">
+      <p>ご家庭では洗えません。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-31">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/pfdry.gif" width="30%">
+      <p>パークロロエチレン及び石油系溶剤による、ドライクリーニングができます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-32">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/pfdryw.gif" width="30%">
+      <p>パークロロエチレン及び石油系溶剤による、弱いドライクリーニングができます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-33">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/bleech_o.gif" width="30%">
+      <p>酸素系漂白剤で、漂白できます。塩素系ではできません。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-34">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/tanb-ng.gif" width="30%">
+      <p>タンブル乾燥禁止です。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-35">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/tanb60c.gif" width="30%">
+      <p>排気温度60℃を上限に、タンブル乾燥できます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-36">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/tanb80c.gif" width="30%">
+      <p>排気温度80℃を上限に、タンブル乾燥できます。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-37">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/turiboshi-hikage.gif" width="30%">
+      <p>日陰で、つり干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-38">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/turiboshi-nure.gif" width="30%">
+      <p>脱水せずぬれたまま、つり干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-39">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/turiboshi-nurehikage.gif" width="30%">
+      <p>日陰で、脱水せずぬれたままつり干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+<div class="modal-wrapper" id="modal-40">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-window">
+    <div class="modal-content">
+      <img src="/static/turiboshi.gif" width="30%">
+      <p>ハンガー等を使って、つり干しします。</p>
+    </div>
+    <a href="#!" class="modal-close">×</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+<h1 class="display-4">Which would you like to prefer?</h1>
+<div class="main">
+  <div class="camera">
+    <p class="ai_choose">Check by Artificial Intelligence</p>
+    <button class="btn_custom1" onclick="location.href='/en_check'"><img src="/static/camera.jpeg" height="150px" width="150px"></button>
+  </div>
+  <div class="list">
+    <p class="list_choose">Choose from the symbols list</p>
+    <button class="btn_custom2" onclick="location.href='/en_list'"><img src="/static/list.png" height="150px" width="150px"></button>
+  </div>
+</div>
+{% endblock %}

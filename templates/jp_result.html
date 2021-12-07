@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+<h1 class="display-7">結果発表!!</h1>
+<div id="result">
+  <div>
+    <h4 class="display-9">{{ percentagemsg }}</h4>
+      <p class="display-10">アップロードされた画像</p>
+      <img src="{{filepath}}">
+    <h4 class="display-8">{{ resultmsg }}</h4>
+  
+  <div>
+    <a class="btn btn--orange btn--radius" href="/">戻る</a>
+  </div>
+</div>
+{% endblock %}

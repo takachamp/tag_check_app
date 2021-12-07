@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cleaning Tag Checker
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+<h2 class="display-5">Let's check with the AI</h2>
+<h3 class="display-6">Please upload the image</h3>
+  <form method='POST' action="/en_predict" enctype="multipart/form-data">
+    <div>
+      <input type="file" name="file">
+      <input type="submit" value="predict">
+    </div>
+  </form>
+{% endblock %}
